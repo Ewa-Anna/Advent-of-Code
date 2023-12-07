@@ -1,4 +1,4 @@
-# Advent of Code 2023
+# Advent of Code 2023 🎄
 This repository contains my approach to [Advent of Code 2023](https://adventofcode.com/2023).
 
 ## Table of Content
