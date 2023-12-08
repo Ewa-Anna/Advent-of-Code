@@ -8,3 +8,4 @@ This repository contains my approach to [Advent of Code 2023](https://adventofco
 - [Day04](https://github.com/Ewa-Anna/Advent-of-Code-2023/tree/main/Day_04) :star: :star:
 - Day05
 - [Day06](https://github.com/Ewa-Anna/Advent-of-Code-2023/tree/main/Day_06) :star: :star:
+- [Day07](https://github.com/Ewa-Anna/Advent-of-Code-2023/tree/main/Day_07) (attempt)
