@@ -12,7 +12,7 @@ with open(puzzle_txt) as f:
 
 
 def custom_sort(s):
-    return ''.join(sorted(s, key=lambda x: (ord(x), x)))
+    return ''.join(sorted(s, key=lambda x: (ord(x), x), reverse=True))
 
 
 def score(i):
@@ -55,9 +55,12 @@ translated_combinations = [
 sorted_data_with_score = sorted(
     translated_combinations, key=score, reverse=False)
 
-print(sorted_data_with_score)
+sorted_data = [[custom_sort(item[0]), item[1]]
+               for item in sorted_data_with_score]
+
+final_sorted_data = sorted(sorted_data, key=lambda x: x[0], reverse=True)
 
 result = sum(i * int(item[1])
-             for i, item in enumerate(sorted_data_with_score, 1))
+             for i, item in enumerate(sorted_data_with_score[::-1], 1))
 
 print(result)
