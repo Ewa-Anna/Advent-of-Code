@@ -11,6 +11,13 @@ This repository contains my approach to [Advent of Code](https://adventofcode.co
 - Day05
 - [Day06](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2023/Day_06) :star: :star:
 - [Day07](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2023/Day_07) (attempt)
+- Day08
+- Day09
+- Day10
+- Day11
+- Day12
+- Day13
+- [Day14](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2023/Day_14) (attempt)
 
 
 ### [Advent of Code 2022](https://adventofcode.com/2022)
