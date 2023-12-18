@@ -1,7 +1,7 @@
 def calc_inner_area(steps):
     vertices = [(0, 0)]
-    for instruction in steps:
-        direction, distance, color = instruction
+    for step in steps:
+        _, _, color = step
         # U 10 (#066c93)
         # [2:7] = 066c9
         hex_string = color[2:7]

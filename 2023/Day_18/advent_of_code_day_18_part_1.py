@@ -1,7 +1,7 @@
 def calc_inner_area(steps):
     vertices = [(0, 0)]
-    for instruction in steps:
-        direction, distance, color = instruction
+    for step in steps:
+        direction, distance, _ = step
         distance = int(distance)
         x, y = vertices[-1]
         if direction == 'R':
@@ -27,6 +27,7 @@ def calc_perimeter(steps):
         distance = int(distance)
         x += distance
     return x
+
 
 # Reading file
 steps = []
