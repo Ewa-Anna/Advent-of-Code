@@ -21,7 +21,7 @@ This repository contains my approach to [Advent of Code](https://adventofcode.co
 - Day15
 - Day16
 - Day17
-- Day18
+- [Day18](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2023/Day_18) :star: :star:
 - Day19
 - Day20
 - Day21
