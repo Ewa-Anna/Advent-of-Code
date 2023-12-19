@@ -1,5 +1,6 @@
 # Advent of Code🎄
 This repository contains my approach to [Advent of Code](https://adventofcode.com/).
+[<img height=5% width=5% src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />](https://devicon.dev/)
 
 ## Table of Content
 
