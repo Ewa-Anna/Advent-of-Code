@@ -1,10 +1,17 @@
 # Advent of Code🎄
 This repository contains my approach to [Advent of Code](https://adventofcode.com/).
 
-[<img height=5% width=5% src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />](https://devicon.dev/)
+[![Python](https://skillicons.dev/icons?i=python)](https://skillicons.dev) 
 
 
-## Table of Content
+## Table of Contents
+
+- [Advent of Code 2023](#advent-of-code-2023)
+- [Advent of Code 2022](#advent-of-code-2022)
+
+
+---
+
 
 ### [Advent of Code 2023](https://adventofcode.com/2023)
 - [Day01](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2023/Day_01) :star: :star:
@@ -59,4 +66,4 @@ This repository contains my approach to [Advent of Code](https://adventofcode.co
 - Day22
 - Day23
 - Day24
-- Day25
+- [Day25](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2022/Day_25) :star: 
