@@ -3,13 +3,7 @@ data = "input.txt"
 with open(data) as f:
     data = [line.rstrip() for line in f]
 
-DIGITS = {
-    '2': 2,
-    '1': 1,
-    '0': 0,
-    '-': -1,
-    '=': -2
-}
+DIGITS = {"2": 2, "1": 1, "0": 0, "-": -1, "=": -2}
 
 total = 0
 for line in data:
