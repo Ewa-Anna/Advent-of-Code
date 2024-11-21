@@ -8,6 +8,12 @@ This repository contains my approach to [Advent of Code](https://adventofcode.co
 
 - [Advent of Code 2023](#advent-of-code-2023)
 - [Advent of Code 2022](#advent-of-code-2022)
+- [Advent of Code 2021](#advent-of-code-2021)
+- [Advent of Code 2020](#advent-of-code-2020)
+- [Advent of Code 2019](#advent-of-code-2019)
+- [Advent of Code 2018](#advent-of-code-2018)
+- [Advent of Code 2017](#advent-of-code-2017)
+- [Advent of Code 2016](#advent-of-code-2016)
 - [Advent of Code 2015](#advent-of-code-2015)
 
 
@@ -72,7 +78,7 @@ This repository contains my approach to [Advent of Code](https://adventofcode.co
 
 ### [Advent of Code 2015](https://adventofcode.com/2015)
 - [Day01](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2015/Day_01) :star: :star:
-- Day02
+- [Day02](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2015/Day_02) :star: :star:
 - Day03
 - Day04
 - Day05
