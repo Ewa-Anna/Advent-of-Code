@@ -1,4 +1,4 @@
-puzzle = "advent_of_code_day_1_puzzle.txt"
+puzzle = "input.txt"
 
 with open(puzzle) as f:
     puzzle_input = [line.rstrip() for line in f]
@@ -13,9 +13,9 @@ floor = 0
 position = 0
 
 for i, change in enumerate(string_to_int):
-    floor += change  
-    if floor == -1:  
-        position = i + 1  #
+    floor += change
+    if floor == -1:
+        position = i + 1
         break
 
 print("First basement entry:", position)

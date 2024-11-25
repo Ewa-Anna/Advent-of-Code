@@ -1,4 +1,4 @@
-puzzle = "advent_of_code_day_2_puzzle.txt"
+puzzle = "input.txt"
 
 with open(puzzle) as f:
     puzzle_input = [line.rstrip() for line in f]
@@ -8,7 +8,7 @@ with open(puzzle) as f:
 total_paper = 0
 
 for present in puzzle_input:
-    l, w, h = map(int, present.split('x'))
+    l, w, h = map(int, present.split("x"))
 
     surface_area = 2 * l * w + 2 * w * h + 2 * h * l
 

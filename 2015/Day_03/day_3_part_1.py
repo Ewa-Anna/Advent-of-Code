@@ -11,15 +11,15 @@ visited_houses = set()
 visited_houses.add(santa_position)
 
 for direction in puzzle_input:
-    if direction == '^':
-        santa_position = (santa_position[0], santa_position[1] + 1)  
-    elif direction == 'v':
-        santa_position = (santa_position[0], santa_position[1] - 1) 
-    elif direction == '>':
-        santa_position = (santa_position[0] + 1, santa_position[1])  
-    elif direction == '<':
-        santa_position = (santa_position[0] - 1, santa_position[1]) 
-    
+    if direction == "^":
+        santa_position = (santa_position[0], santa_position[1] + 1)
+    elif direction == "v":
+        santa_position = (santa_position[0], santa_position[1] - 1)
+    elif direction == ">":
+        santa_position = (santa_position[0] + 1, santa_position[1])
+    elif direction == "<":
+        santa_position = (santa_position[0] - 1, santa_position[1])
+
     visited_houses.add(santa_position)
 
 print(len(visited_houses))
