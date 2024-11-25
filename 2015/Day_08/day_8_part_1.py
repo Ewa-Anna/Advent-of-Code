@@ -18,7 +18,7 @@ def calculate_difference(strings):
         total_code += len(code)
 
         memory = memory.replace(r"\\", "\\")
-        memory = memory.replace(r"\"", "\"")
+        memory = memory.replace(r"\"", '"')
         memory = re.sub(r"\\x[0-9a-fA-F]{2}", ".", memory)
 
         total_memory += len(memory)

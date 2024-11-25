@@ -15,8 +15,8 @@ def calculate_encoded_difference(strings):
         total_original += len(string)
 
         encoded = string.replace("\\", "\\\\")
-        encoded = encoded.replace("\"", "\\\"")
-        encoded = f"\"{encoded}\""
+        encoded = encoded.replace('"', '\\"')
+        encoded = f'"{encoded}"'
 
         total_encoded += len(encoded)
 

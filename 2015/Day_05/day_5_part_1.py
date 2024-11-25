@@ -5,7 +5,7 @@ with open(puzzle) as f:
 
 
 def is_nice(word):
-    # 1) at least 3 vowels 
+    # 1) at least 3 vowels
     vowels = "aeiou"
     vowel_count = sum(1 for char in word if char in vowels)
 
@@ -17,6 +17,7 @@ def is_nice(word):
     has_disallowed = any(sub in word for sub in disallowed)
 
     return vowel_count >= 3 and has_double and not has_disallowed
+
 
 nice_count = sum(1 for word in puzzle_input if is_nice(word))
 
