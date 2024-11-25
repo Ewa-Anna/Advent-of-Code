@@ -1,4 +1,4 @@
-puzzle = "advent_of_code_day_2_puzzle.txt"
+puzzle = "input.txt"
 
 with open(puzzle) as f:
     puzzle_input = [line.rstrip() for line in f]
