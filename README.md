@@ -251,7 +251,7 @@ This repository contains my approach to [Advent of Code](https://adventofcode.co
 - [Day04](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2015/Day_04) :star: :star:
 - [Day05](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2015/Day_05) :star: :star:
 - [Day06](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2015/Day_06) :star: :star:
-- Day07
+- [Day07](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2015/Day_07) :star: :star:
 - Day08
 - Day09
 - Day10
