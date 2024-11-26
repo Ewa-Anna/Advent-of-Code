@@ -13,9 +13,9 @@ floor = 0
 position = 0
 
 for i, change in enumerate(string_to_int):
-    floor += change  
-    if floor == -1:  
-        position = i + 1 
+    floor += change
+    if floor == -1:
+        position = i + 1
         break
 
 print("First basement entry:", position)
