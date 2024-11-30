@@ -14,15 +14,15 @@ except json.JSONDecodeError as e:
 
 
 def sum_numbers_ignore_red(data):
-    if isinstance(data, int) or isinstance(data, float):  
+    if isinstance(data, int) or isinstance(data, float):
         return data
-    elif isinstance(data, list):  
+    elif isinstance(data, list):
         return sum(sum_numbers_ignore_red(item) for item in data)
-    elif isinstance(data, dict):  
+    elif isinstance(data, dict):
         if "red" in data.values():
-            return 0  
+            return 0
         return sum(sum_numbers_ignore_red(value) for value in data.values())
-    return 0  
+    return 0
 
 
 if parsed_json is not None:

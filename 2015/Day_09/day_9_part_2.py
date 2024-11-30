@@ -14,11 +14,12 @@ def find_longest_route(input_lines):
 
     for route in permutations(locations):
         route_distance = sum(
-            distances[(route[i], route[i+1])] for i in range(len(route) - 1)
+            distances[(route[i], route[i + 1])] for i in range(len(route) - 1)
         )
         longest_distance = max(longest_distance, route_distance)
 
     return longest_distance
+
 
 longest_distance = find_longest_route(puzzle_input)
 print("Longest Distance:", longest_distance)
