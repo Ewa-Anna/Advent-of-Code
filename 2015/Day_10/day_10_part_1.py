@@ -1,4 +1,4 @@
-def look_and_say(sequence, iterations): 
+def look_and_say(sequence, iterations):
     for _ in range(iterations):
         result = []
         count = 1
@@ -9,8 +9,9 @@ def look_and_say(sequence, iterations):
                 result.append(f"{count}{sequence[i - 1]}")
                 count = 1
         result.append(f"{count}{sequence[-1]}")
-        sequence = ''.join(result)
+        sequence = "".join(result)
     return sequence
+
 
 puzzle_input = "1113222113"
 
