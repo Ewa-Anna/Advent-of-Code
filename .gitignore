@@ -1,3 +1,6 @@
 test*.py
 __pycache__
 venv/
+input.txt
+advent_of_code_day_*_puzzle.txt
+data.txt
