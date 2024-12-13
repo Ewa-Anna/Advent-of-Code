@@ -34,7 +34,7 @@ This repository contains my approach to [Advent of Code](https://adventofcode.co
 - [Day10](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2024/Day_10) :star: :star:
 - [Day11](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2024/Day_11) :star: :star:
 - Day12
-- Day13
+- [Day13](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2024/Day_13) :star: 
 - Day14
 - Day15
 - Day16
