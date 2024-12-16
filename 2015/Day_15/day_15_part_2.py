@@ -1,7 +1,14 @@
 from day_15_part_1 import ingredients
 
+
 def calculate_score(amounts, ingredients):
-    total_properties = {"capacity": 0, "durability": 0, "flavor": 0, "texture": 0, "calories": 0}
+    total_properties = {
+        "capacity": 0,
+        "durability": 0,
+        "flavor": 0,
+        "texture": 0,
+        "calories": 0,
+    }
     for ingredient, amount in zip(ingredients.keys(), amounts):
         for prop in total_properties:
             total_properties[prop] += ingredients[ingredient][prop] * amount
@@ -13,6 +20,7 @@ def calculate_score(amounts, ingredients):
         * total_properties["texture"]
     )
     return total_score, total_properties["calories"]
+
 
 max_score = 0
 

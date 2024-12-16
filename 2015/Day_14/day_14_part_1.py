@@ -11,12 +11,14 @@ for line in raw_input:
     rest_time = int(line[-2])
     reindeer.append((name, speed, fly_time, rest_time))
 
+
 def calculate_distance(speed, fly_time, rest_time, total_seconds):
     cycle_time = fly_time + rest_time
     full_cycles = total_seconds // cycle_time
     remaining_time = total_seconds % cycle_time
     flying_time = full_cycles * fly_time + min(fly_time, remaining_time)
     return flying_time * speed
+
 
 race_duration = 2503
 
