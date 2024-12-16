@@ -6,7 +6,7 @@ with open(puzzle) as f:
 ingredients = {}
 
 for line in raw_input:
-    name = line[0][:-1]  
+    name = line[0][:-1]
     capacity = int(line[2].strip(","))
     durability = int(line[4].strip(","))
     flavor = int(line[6].strip(","))
@@ -18,16 +18,25 @@ for line in raw_input:
         "durability": durability,
         "flavor": flavor,
         "texture": texture,
-        "calories": calories
+        "calories": calories,
     }
 
 
 def calculate_score(quantities, properties):
-    total_capacity = max(0, sum(q * properties[i]["capacity"] for i, q in enumerate(quantities)))
-    total_durability = max(0, sum(q * properties[i]["durability"] for i, q in enumerate(quantities)))
-    total_flavor = max(0, sum(q * properties[i]["flavor"] for i, q in enumerate(quantities)))
-    total_texture = max(0, sum(q * properties[i]["texture"] for i, q in enumerate(quantities)))
+    total_capacity = max(
+        0, sum(q * properties[i]["capacity"] for i, q in enumerate(quantities))
+    )
+    total_durability = max(
+        0, sum(q * properties[i]["durability"] for i, q in enumerate(quantities))
+    )
+    total_flavor = max(
+        0, sum(q * properties[i]["flavor"] for i, q in enumerate(quantities))
+    )
+    total_texture = max(
+        0, sum(q * properties[i]["texture"] for i, q in enumerate(quantities))
+    )
     return total_capacity * total_durability * total_flavor * total_texture
+
 
 ingredient_names = list(ingredients.keys())
 ingredient_properties = [ingredients[name] for name in ingredient_names]

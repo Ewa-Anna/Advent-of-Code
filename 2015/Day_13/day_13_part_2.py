@@ -10,7 +10,7 @@ with open(puzzle) as f:
 happiness = {}
 for line in raw_input:
     person1 = line[0]
-    person2 = line[-1].strip('.')
+    person2 = line[-1].strip(".")
     change = int(line[3]) if line[2] == "gain" else -int(line[3])
     happiness[(person1, person2)] = change
 
@@ -24,7 +24,7 @@ for guest in list(guests):
     happiness[(guest, new_guest)] = 0
 
 
-optimal_happiness = float('-inf')
+optimal_happiness = float("-inf")
 optimal_arrangement = None
 
 for arrangement in permutations(guests):

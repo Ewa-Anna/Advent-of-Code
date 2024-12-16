@@ -14,7 +14,7 @@ mfcsam_results = {
 
 def parse_aunt_sues(file_path):
     aunt_sues = {}
-    with open(file_path, 'r') as file:
+    with open(file_path, "r") as file:
         for line in file:
             parts = line.strip().split(": ", 1)
             sue_id = int(parts[0].split()[1])
@@ -29,7 +29,10 @@ def parse_aunt_sues(file_path):
 
 def find_matching_sue(aunt_sues, mfcsam_results):
     for sue_id, attributes in aunt_sues.items():
-        if all(mfcsam_results.get(attr, value) == value for attr, value in attributes.items()):
+        if all(
+            mfcsam_results.get(attr, value) == value
+            for attr, value in attributes.items()
+        ):
             return sue_id
     return None
 
