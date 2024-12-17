@@ -1,7 +1,8 @@
 import heapq
 
+
 def parse_maze(file_path):
-    with open(file_path, 'r') as file:
+    with open(file_path, "r") as file:
         maze = [list(line.strip()) for line in file]
 
     start = None
@@ -9,12 +10,13 @@ def parse_maze(file_path):
 
     for y, row in enumerate(maze):
         for x, cell in enumerate(row):
-            if cell == 'S':
+            if cell == "S":
                 start = (x, y)
-            elif cell == 'E':
+            elif cell == "E":
                 end = (x, y)
 
     return maze, start, end
+
 
 def get_neighbors(position, direction, maze):
     x, y = position
@@ -23,7 +25,11 @@ def get_neighbors(position, direction, maze):
     moves = []
     forward_x, forward_y = x + directions[direction][0], y + directions[direction][1]
 
-    if 0 <= forward_y < len(maze) and 0 <= forward_x < len(maze[0]) and maze[forward_y][forward_x] != '#':
+    if (
+        0 <= forward_y < len(maze)
+        and 0 <= forward_x < len(maze[0])
+        and maze[forward_y][forward_x] != "#"
+    ):
         moves.append(((forward_x, forward_y), direction, 1))
 
     left_direction = (direction - 1) % 4
@@ -33,10 +39,11 @@ def get_neighbors(position, direction, maze):
 
     return moves
 
-def dijkstra_min_cost(maze, start, end):
-    start_direction = 0  
 
-    priority_queue = [(0, start, start_direction)] 
+def dijkstra_min_cost(maze, start, end):
+    start_direction = 0
+
+    priority_queue = [(0, start, start_direction)]
     visited = set()
 
     while priority_queue:
@@ -49,10 +56,15 @@ def dijkstra_min_cost(maze, start, end):
         if position == end:
             return cost
 
-        for next_position, next_direction, move_cost in get_neighbors(position, direction, maze):
-            heapq.heappush(priority_queue, (cost + move_cost, next_position, next_direction))
+        for next_position, next_direction, move_cost in get_neighbors(
+            position, direction, maze
+        ):
+            heapq.heappush(
+                priority_queue, (cost + move_cost, next_position, next_direction)
+            )
 
-    return float('inf')
+    return float("inf")
+
 
 if __name__ == "__main__":
     maze, start, end = parse_maze("input.txt")
