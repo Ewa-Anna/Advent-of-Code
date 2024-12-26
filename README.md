@@ -295,7 +295,7 @@ This repository contains my approach to [Advent of Code](https://adventofcode.co
 - [Day19](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2015/Day_19) :star: :star:
 - [Day20](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2015/Day_20) :star: :star:
 - [Day21](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2015/Day_21) :star: :star:
-- Day22
+- [Day22](https://github.com/Ewa-Anna/Advent-of-Code/tree/main/2015/Day_22) :star: :star:
 - Day23
 - Day24
 - Day25
