@@ -1,10 +1,6 @@
 def find_bathroom_code(file_path):
-    keypad = [
-        ["1", "2", "3"],
-        ["4", "5", "6"],
-        ["7", "8", "9"]
-    ]
-    
+    keypad = [["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"]]
+
     moves = {"U": (-1, 0), "D": (1, 0), "L": (0, -1), "R": (0, 1)}
 
     def get_next_position(pos, move):
@@ -27,5 +23,6 @@ def find_bathroom_code(file_path):
         code.append(keypad[position[0]][position[1]])
 
     return "".join(code)
+
 
 print(find_bathroom_code("input.txt"))
