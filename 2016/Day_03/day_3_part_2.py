@@ -1,12 +1,13 @@
 from day_3_part_1 import is_valid_triangle
 
+
 def count_valid_triangles_by_columns(filename):
     valid_count = 0
     triangles = []
-    
-    with open(filename, 'r') as file:
+
+    with open(filename, "r") as file:
         rows = [list(map(int, line.split())) for line in file]
-        
+
     for col in range(3):
         for i in range(0, len(rows), 3):
             if i + 2 < len(rows):
@@ -16,6 +17,7 @@ def count_valid_triangles_by_columns(filename):
 
     return valid_count
 
-filename = 'input.txt'
+
+filename = "input.txt"
 valid_triangles = count_valid_triangles_by_columns(filename)
 print(f"Number of valid triangles (by columns): {valid_triangles}")
