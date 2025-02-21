@@ -1,5 +1,6 @@
 from day_8_part_1 import parse_instruction
 
+
 def apply_instruction(screen, instruction):
     if instruction[0] == "rect":
         a, b = instruction[1], instruction[2]
@@ -48,6 +49,7 @@ def decode_screen(screen):
         "100101001001100001000010000100": "Y",
         "111100001000100010001000011110": "Z",
     }
+
 
 width, height = 50, 6
 screen = [[0] * width for _ in range(height)]
